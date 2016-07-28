@@ -24,7 +24,7 @@ var sapp = new SlackApp({
     // webhooks express app
     express: {
         // pass your already existing express app instance to add the webhooks listeners
-        // remember to call app.liste() only after calling the slackbotapp.start() method
+        // remember to call app.listen() only after calling the slackbotapp.start() method
         // (otherwise the listener might not be added)
         app: Object,
         // use if you want a new an express app be create to listen to webhooks on a specific port
