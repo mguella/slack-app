@@ -28,7 +28,7 @@ var sapp = new SlackBotApp({
         command: '/slack/execute-command'
     },
     // bot credentials
-    // needed for the register bot token weebook, only if app is added with slack add button
+    // needed to the register bot token weebook, only if app is added with slack add button
     credentials: {
         // bot client id
         client_id: 'YOUR_CLIENT_ID',
@@ -78,7 +78,7 @@ var sapp = new SlackBotApp({
             else
                 res.send('Command not implemented yet');
         },
-        // message hadler
+        // message handler
         message: (slack, message, data) => {
             // if result has text or attachments
             if (message === 'hello')
